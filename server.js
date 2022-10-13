@@ -21,12 +21,7 @@ const LocalStrategy = require('passport-local').Strategy
 const {userDaos: User} = require('./daos/mainDaos')
 const script = require('bcrypt')
 const saltRounds = 10;
-// const usuarios = 
-// [
-//   {mail: 'tomas@gusername', password: 'Tomas'},
-//   {mail: 'tobias@gusername', password: 'Tobias'},
-//   {mail: 'juan@gusername', password: 'Juan'}
-// ]
+
 
 const MongoStore = require('connect-mongo')
 const Usuario = require('./daos/userDaos')
@@ -63,7 +58,7 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 
-//passport
+
 
 passport.use(
   'register',
@@ -115,7 +110,7 @@ passport.deserializeUser((nombre, done) => {
 })
 
 
-/*----------- Motor de plantillas -----------*/
+
 app.set('views', './src/views')
 
 app.engine(
@@ -128,7 +123,7 @@ app.engine(
 )
 app.set('view engine', '.hbs')
 
-//rutas
+
 
 app.get('/login', (req, res) => {
   req.logOut()

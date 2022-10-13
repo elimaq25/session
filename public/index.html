@@ -22,35 +22,35 @@
         integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <div class="card-body">
+        <div >
           <form action="http://localhost:8080/logout" method="get">
             
               <div id="usuario"></div>
   
-              <button class="btn btn-primary btn-block" type="submit">
+              <button type="submit">
                 Desloguear
               </button>
             </div>
           </form>
   
-  <div class="col-md-4 mx-auto">
-    <div class="card text-center">
-      <div class="card-header" >
+  <div>
+    <div >
+      <div  >
         <h3>Agregar producto</h3>
       </div>
-      <div class="card-body">
+      <div >
         <form onsubmit="return addProd(this)">
           
-          <div class="form-group">
+          <div >
             <input type="text" id="title" class="form-control" placeholder="Nombre del producto" autofocus/>
           </div>
-          <div class="form-group">
+          <div >
             <input type="number" id="precio" class="form-control" placeholder="Precio" autofocus/>
           </div>
-          <div class="form-group">
+          <div >
             <input type="text" id="thumbnail" class="form-control" placeholder="Imagen (URL)" autofocus/>
           </div>
-          <div class="form-group">
+          <div >
             <button class="btn btn-primary btn-block" type="submit">
               Agregar
             </button>
@@ -67,37 +67,37 @@
 
 
 
-  <div class="col-md-4 mx-auto">
-    <div class="card text-center">
-      <div class="card-header">
+  <div >
+    <div>
+      <div >
         <h3>Centro de Mensajes</h3>
       </div>
-      <div class="card-body">
+      <div >
         <div id="mensajes"></div>
         <form onsubmit="return addMessage(this)">
-          <div class="form-group">
+          <div >
             <input type="text" id="mail" class="form-control" placeholder="Mail" autofocus/>
           </div>
-          <div class="form-group">
+          <div >
             <input type="text" id="nombre" class="form-control" placeholder="Nombre" autofocus/>
           </div>
-          <div class="form-group">
+          <div>
             <input type="text" id="apellido" class="form-control" placeholder="Apellido" autofocus/>
           </div>
-          <div class="form-group">
+          <div >
             <input type="number" id="edad" class="form-control" placeholder="Edad" autofocus/>
           </div>
-          <div class="form-group">
+          <div >
             <input type="text" id="alias" class="form-control" placeholder="Alias" autofocus/>
           </div>
-          <div class="form-group">
+          <div >
             <input type="text" id="avatar" class="form-control" placeholder="Avatar" autofocus/>
           </div>
-          <div class="form-group">
+          <div>
             <input type="text" id="texto" class="form-control" placeholder="Escribe un mensaje" autofocus/>
           </div>
-          <div class="form-group">
-            <button class="btn btn-primary btn-block" type="submit">
+          <div >
+            <button  type="submit">
               Enviar
             </button>
             
